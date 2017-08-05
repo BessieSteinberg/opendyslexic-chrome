@@ -38,16 +38,28 @@ html {
 	font-family: opendyslexic;
 }
 
-p:nth-child(even), li:nth-child(even) {
+p:nth-child(even),
+li:nth-child(even) {
 	opacity: rgba(0, 0, 0, 0.03);
 }
 
-p:hover, li:hover {
+p:hover,
+li:hover {
 	background-color: rgba(0, 0, 0, 0.09) !important;
 }
 
-
-p, a, h1, h2, h3, h4, h5, input, ul, span, font, strong {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+ul,
+span,
+font,
+strong {
 	font-family: opendyslexic !important;
 	line-height: 150%;
 }
@@ -56,12 +68,14 @@ p, a, h1, h2, h3, h4, h5, input, ul, span, font, strong {
 	font-family: opendyslexic;
 }
 
-pre, code {
+pre,
+code {
 	font-family: opendyslexicmono !important;
 	line-height: 150%;
 }
 
-.ace_text-input, .prettyprint {
+.ace_text-input,
+.prettyprint {
 	font-family: opendyslexicmono !important;
 }
 
@@ -69,14 +83,24 @@ pre, code {
 	background-color: #fff !important;
 }
 
-input, textarea {
+input,
+textarea {
 	font-family: opendyslexic !important;
 }
 
 
 /* NYTimes Support */
 
-.story.theme-summary .summary, .span-ab-bottom-region .story.theme-summary .summary, .inside-nyt .story.theme-summary .story-heading, .well .column ul li .story .story-heading, .inside-nyt .story.theme-summary.no-thumb .story-heading, .inside-nyt .story.theme-summary .summary, .recommendations ol li .story-heading, .tone-news .story.theme-main .story-header .story-heading, .type-size-small .story.theme-main .story-body-text, .story.theme-summary .story-heading {
+.story.theme-summary .summary,
+.span-ab-bottom-region .story.theme-summary .summary,
+.inside-nyt .story.theme-summary .story-heading,
+.well .column ul li .story .story-heading,
+.inside-nyt .story.theme-summary.no-thumb .story-heading,
+.inside-nyt .story.theme-summary .summary,
+.recommendations ol li .story-heading,
+.tone-news .story.theme-main .story-header .story-heading,
+.type-size-small .story.theme-main .story-body-text,
+.story.theme-summary .story-heading {
 	font-family: opendyslexic;
 	line-height: 150%;
 }
@@ -84,7 +108,8 @@ input, textarea {
 
 /* WSJ Support */
 
-article .article_header h1, article p {
+article .article_header h1,
+article p {
 	font-family: opendyslexic;
 	line-height: 150%;
 }

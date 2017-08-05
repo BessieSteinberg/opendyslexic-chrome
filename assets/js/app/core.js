@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 	/*
 	 * Load Vue
 	 */
@@ -14,39 +14,39 @@ window.onload = function() {
 			/*
 			 * reload the page
 			 */
-			reloadPage: function() {
-				chrome.tabs.getSelected(null, function(tab) {
+			reloadPage: function () {
+				chrome.tabs.getSelected(null, function (tab) {
 					chrome.tabs.reload(tab.id);
 				});
 			},
 			/*
 			 * Change settings
 			 */
-			changeSetting: function() {
+			changeSetting: function () {
 				var self = this;
 				this.enabled = !this.enabled;
 				chrome.storage.sync.set({
 					"enabled": this.enabled
-				}, function() {
+				}, function () {
 					self.reloadPage();
 				});
 			},
 			/*
 			 * load settings function
 			 */
-			loadSettings: function() {
+			loadSettings: function () {
 				var self = this;
-				chrome.storage.sync.get("enabled", function(items) {
+				chrome.storage.sync.get("enabled", function (items) {
 					self.enabled = items.enabled;
 				});
 			}
 		},
 		computed: {
-			text: function() {
+			text: function () {
 				return this.enabled ? "On" : "Off";
 			}
 		},
-		ready: function() {
+		ready: function () {
 			/*
 			 * Load the settings function
 			 */

@@ -3,8 +3,7 @@
   "description": "Format pages using the OpenDyslexic font and low contrast help.",
   "author": "Abbie Gonzalez & Robert James Gabriel ",
   "license": "ISC",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Abbie Gonzalez",
       "email": ""
     },
