@@ -1,34 +1,38 @@
 {
-    "name": "OpenDyslexic",
-    "version": "5.0.4",
-    "default_locale": "en",
-
     "manifest_version": 2,
+    "default_locale": "en",
+    "name": "OpenDyslexic",
+    "short_name": "OpenDyslexic",
     "description": "Format pages using the OpenDyslexic font and low contrast help.",
+    "version": "5.0.4",
+
     "browser_action": {
+        "default_icon": {
+            "128": "/assets/img/icons/icon-128.png"
+        },
+        "default_title": "OpenDyslexic",
         "default_popup": "index.html"
     },
+
     "icons": {
         "128": "/assets/img/icons/icon-128.png"
     },
-    "permissions": [
-        "tabs",
-        "*://*/*",
-        "http://*/*",
-        "https://*/*",
-        "<all_urls>",
-        "storage"
-    ],
     "content_scripts": [{
         "matches": [
-            "*://*/*",
-            "file:///*/*"
-        ],
-        "js": [
-            "/assets/dist/js/app/system.min.js"
-        ],
-        "all_frames": true
+            "*://*/*"
+        ]
     }],
+    "permissions": [
+        "*://*/*",
+        "storage",
+        "cookies",
+        "tabs",
+        "activeTab",
+        "http://*/*",
+        "https://*/*"
+
+    ],
+
     "web_accessible_resources": [
         "/assets/dist/fonts/OpenDyslexic-Bold.otf",
         "/assets/dist/fonts/OpenDyslexic-BoldItalic.otf",
@@ -36,5 +40,10 @@
         "/assets/dist/fonts/OpenDyslexic-Regular.otf",
         "/assets/dist/fonts/OpenDyslexicMono-Regular.otf",
         "/assets/dist/css/app/accesibility.min.css"
-    ]
+    ],
+    "applications": {
+        "gecko": {
+            "id": "YOUR EXTENSION ID HERE"
+        }
+    }
 }
